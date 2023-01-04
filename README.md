@@ -1,4 +1,6 @@
-
+#### Group members:
+* Abolfazl Ramezanian
+* AliReza Rahmati
 # Generalized Suffix Tree
 
 Allows for fast storage and fast(er) retrieval by creating a tree-based index out of a set of strings.
@@ -31,30 +33,18 @@ This class is for testing the `GeneralizedSuffixTree` class and its methods
 ### Node:
 * Represents a node of the generalized suffix tree graph
 * `getData` :
-    * Returns the first <tt>numElements</tt> elements from the ones associated to this node.
-    * Gets data from the payload of both this node and its children, the string representation of the path to this node is a substring of the one of the children nodes.
-    * @param numElements the number of results to return. Use -1 to get all
-    * @return the first <tt>numElements</tt> associated to this node and children
+  * Returns the first <tt>numElements</tt> elements from the ones associated to this node.
+  * Gets data from the payload of both this node and its children, the string representation of the path to this node is a substring of the one of the children nodes.
+  * @param numElements the number of results to return. Use -1 to get all
+  * @return the first <tt>numElements</tt> associated to this node and children
 * `addRef` :
-    * Adds the given <tt>index</tt> to the set of indexes associated with <tt>this</tt>
+  * Adds the given <tt>index</tt> to the set of indexes associated with <tt>this</tt>
 
 * `contain` :
-    * Tests whether a node contains a reference to the given index.
-    * <b>IMPORTANT</b>: it works because the array is sorted by construction
-    * @param index the index to look for
-    * @return true <tt>this</tt> contains a reference to index
-
-* `computeAndCacheCount` :
-    * Computes the number of results that are stored on this node and on its children, and caches the result.
-    * Performs the same operation on subnodes as well
-    * @return the number of results
-* `getResultCount` :
-    * Returns the number of results that are stored on this node and on its
-    * children.
-    * Should be called after having called computeAndCacheCount.
-    * @throws IllegalStateException when this method is called without having called
-    * computeAndCacheCount first
-    * @see Node#computeAndCacheCount()
+  * Tests whether a node contains a reference to the given index.
+  * <b>IMPORTANT</b>: it works because the array is sorted by construction
+  * @param index the index to look for
+  * @return true <tt>this</tt> contains a reference to index
 
 ## Differences from the original suffix tree
 
