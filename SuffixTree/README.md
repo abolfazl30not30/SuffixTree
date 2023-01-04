@@ -1,4 +1,6 @@
-
+#### Group members:
+* Abolfazl Ramezanian
+* AliReza Rahmati
 # Generalized Suffix Tree
 
 Allows for fast storage and fast(er) retrieval by creating a tree-based index out of a set of strings.
@@ -43,18 +45,6 @@ This class is for testing the `GeneralizedSuffixTree` class and its methods
     * <b>IMPORTANT</b>: it works because the array is sorted by construction
     * @param index the index to look for
     * @return true <tt>this</tt> contains a reference to index
-
-* `computeAndCacheCount` :
-    * Computes the number of results that are stored on this node and on its children, and caches the result.
-    * Performs the same operation on subnodes as well
-    * @return the number of results
-* `getResultCount` :
-    * Returns the number of results that are stored on this node and on its
-    * children.
-    * Should be called after having called computeAndCacheCount.
-    * @throws IllegalStateException when this method is called without having called
-    * computeAndCacheCount first
-    * @see Node#computeAndCacheCount()
 
 ## Differences from the original suffix tree
 
